@@ -35,7 +35,7 @@
                 </div>
                 <div class="flex flex-col space-y-3">
                     <span class=" font-semibold">Profile Picture :</span>
-                    <img class="inline object-cover w-16 h-16 rounded-full cursor-pointer" src="{{$user->profile_picture?Storage::url($user->profile_picture):url('/images/default_profil.jpg')}}" alt="">
+                    <img class="inline object-cover w-16 h-16 rounded-full cursor-pointer" src="{{isset($user->profile_picture)?Storage::url($user->profile_picture):url('/images/default_profil.jpg')}}" alt="">
 
                     <input type="file" class="p-3 border rounded-md" name="profile_picture">
                 </div>
