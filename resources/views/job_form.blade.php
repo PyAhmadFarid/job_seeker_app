@@ -27,7 +27,8 @@
                             <input type="text" class="p-3 border rounded-md" name="phone_number" >
                         </div>
                         <div class="flex flex-col space-y-3">
-                            <span class=" font-semibold">Resume</span>
+                            <span class=" font-semibold">Document</span>
+                            <span class="text-sm">*lampiran documen seperti cv/ijaza/dll</span>
                             <input type="file" class="p-3 border rounded-md" name="document" >
                         </div>
 
