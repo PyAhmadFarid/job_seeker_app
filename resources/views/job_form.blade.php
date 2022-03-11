@@ -24,17 +24,31 @@
                         </div>
                         <div class="flex flex-col space-y-3">
                             <span class=" font-semibold">Phone Number</span>
-                            <input type="text" class="p-3 border rounded-md" name="phone_number" >
+                            <input type="text" class="p-3 border rounded-md" name="phone_number">
                         </div>
                         <div class="flex flex-col space-y-3">
                             <span class=" font-semibold">Document</span>
-                            <span class="text-sm">*lampiran documen seperti cv/ijaza/dll</span>
-                            <input type="file" class="p-3 border rounded-md" name="document" >
+                            <span class="text-sm font-semibold">*lampiran documen seperti :,</span>
+                            <span class=" text-sm">
+
+                                <ul class="list-disc">
+                                    <li>Surat Lamaran</li>
+                                    <li>Portofolio</li>
+                                    <li>Fotokopi Ijazah</li>
+                                    <li>Fotokopi KTP dan Kartu Keluarga</li>
+                                    <li>Pas Foto Terbaru 3x4</li>
+                                    <li>Surat Keterangan Catatan Kepolisian (SKCK)</li>
+                                    <li>Fotokopi Surat Keterangan Sehat</li>
+                                </ul>
+
+                            </span>
+                            <input type="file" class="p-3 border rounded-md" name="document">
                         </div>
 
                     </div>
                     <div class="flex border-t justify-end space-x-3 p-10">
-                        <a href="{{ redirect()->back()->getTargetUrl()}}" class="bg-red-300 py-3 px-5 rounded-md font-semibold">Cancel</a>
+                        <a href="{{ redirect()->back()->getTargetUrl() }}"
+                            class="bg-red-300 py-3 px-5 rounded-md font-semibold">Cancel</a>
                         <button class="bg-green-300 py-3 px-5 rounded-md font-semibold">Send</button>
                     </div>
                 </form>
